@@ -1,0 +1,33 @@
+@import "../base/base";
+
+.landing {
+    font-family: Roboto;
+    text-align: center;
+    color: $logo-text-color;
+    background-color: rgb(246, 246, 246);
+
+    h2 {
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 28.13px;
+        padding: 50px 0px 30px;
+        margin: 0;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21.09px;
+        color: #353535;
+        padding: 0 30px;
+    }
+    .explore-btn {
+        padding: 50px 0;
+    }
+    .explore-btn button {
+        border: none;
+        border-radius: 40px;
+        padding: 20px 30px;
+        background: linear-gradient(45deg, $secondary-color, $primary-color);
+        color: white;
+    }
+}

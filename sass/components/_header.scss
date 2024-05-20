@@ -1,0 +1,29 @@
+@import "../base/base";
+header {
+    background-color: white;
+    color: $logo-text-color;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 43.74px;
+    font-family: Shrikhand;
+    font-weight: 400;
+}
+
+header {
+    .location {
+        background-color: #eaeaea;
+        padding: 10px;
+        box-shadow: 0px 1px 10px 0 #00000052;
+    }
+    .location p {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        text-align: center;
+    }
+    .location p i {
+        margin-right: 3px;
+    }
+}

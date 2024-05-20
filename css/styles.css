@@ -1,0 +1,243 @@
+@import url("../css/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@import "~@fortawesome/fontawesome-free/css/all.css";
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.771);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.771);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 43.74px;
+  font-family: Shrikhand;
+  font-weight: 400;
+}
+
+header .location {
+  background-color: #eaeaea;
+  padding: 10px;
+  box-shadow: 0px 1px 10px 0 rgba(0, 0, 0, 0.3215686275);
+}
+header .location p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+}
+header .location p i {
+  margin-right: 3px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.771);
+  margin: 0;
+  padding: 0;
+}
+
+.landing {
+  font-family: Roboto;
+  text-align: center;
+  color: black;
+  background-color: rgb(246, 246, 246);
+}
+.landing h2 {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 28.13px;
+  padding: 50px 0px 30px;
+  margin: 0;
+}
+.landing p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  color: #353535;
+  padding: 0 30px;
+}
+.landing .explore-btn {
+  padding: 50px 0;
+}
+.landing .explore-btn button {
+  border: none;
+  border-radius: 40px;
+  padding: 20px 30px;
+  background: linear-gradient(45deg, #ff79da, #9356dc);
+  color: white;
+}
+
+.fonctionnement {
+  padding: 20px;
+}
+.fonctionnement h2 {
+  padding-bottom: 20px;
+}
+.fonctionnement .boxes {
+  text-align: center;
+}
+.fonctionnement .box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2196078431);
+}
+.fonctionnement .box i {
+  padding: 0 20px 0 45px;
+  color: #9356dc;
+}
+.fonctionnement .box::before {
+  content: "01";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #9356dc;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 7px;
+  text-align: center;
+  left: -10px;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .fonctionnement .boxes {
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  .fonctionnement .box {
+    margin: 10px;
+    padding: 5px 30px;
+  }
+}
+.restaurants {
+  padding: 20px;
+}
+.restaurants .plats {
+  padding: 20px;
+}
+.restaurants .plats .plat {
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  position: relative;
+  margin-bottom: 20px;
+}
+.restaurants .plats .nouveau-plat::before {
+  content: "Nouveau";
+  position: absolute;
+  background-color: #66ebca;
+  color: #008766;
+  padding: 5px;
+  right: 12px;
+  top: 12px;
+}
+.restaurants .plats .img {
+  overflow: hidden;
+  height: 200px;
+}
+.restaurants .plats img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants .plats .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants .plats .name {
+  padding: 5px 20px 10px;
+  font-family: Roboto;
+}
+.restaurants .plats .name h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.restaurants .plats .name p {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 1.001px;
+}
+.restaurants .plats .fav {
+  padding-right: 30px;
+  font-size: 22px;
+}
+.restaurants .plats .selected i {
+  background: linear-gradient(45deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .plats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+  }
+}
+footer {
+  background-color: rgb(42, 42, 42);
+  color: whitesmoke;
+  padding: 20px;
+}
+footer h3 {
+  font-family: Shrikhand;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+footer div span {
+  padding-top: 10px;
+}
+footer div span i {
+  padding-right: 8px;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  footer div span {
+    margin-right: 30px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+footer {
+    background-color: rgb(42, 42, 42);
+    color: whitesmoke;
+    padding: 20px;
+
+	h3 {
+		font-family: Shrikhand;
+	}
+    div {
+        display: flex;
+        flex-direction: column;
+        span {
+            i {
+                padding-right: 8px;
+            }
+            padding-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		align-items: center;
+		
+		div {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			span {
+				margin-right: 30px;
+			}
+		}
+    }
+}
