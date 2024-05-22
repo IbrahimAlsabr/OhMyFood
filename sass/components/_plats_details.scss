@@ -127,19 +127,6 @@ img {
     }
 }
 
-// .plat-price::after {
-//     content: <i class="fas fa-check"></i>;
-//     background-color: $tertiary-color;
-//     height: 100%;
-//     width: 100px;
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-
-//     border-top-right-radius: 20px;
-//     border-bottom-right-radius: 20px;
-// }
-
 .explore-btn {
     padding: 55px 0 0 0;
 }
@@ -166,4 +153,8 @@ img {
 
         height: 300px;
     }
+}
+
+footer {
+    margin-top: -70px;
 }
