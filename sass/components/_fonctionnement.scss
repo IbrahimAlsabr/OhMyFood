@@ -39,8 +39,9 @@
 }
 @media (min-width: 1024px) {
     .fonctionnement {
+        padding: 0 100px;
         .boxes {
-			margin: 0 30px;
+            margin: 0 30px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;

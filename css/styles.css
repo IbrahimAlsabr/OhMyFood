@@ -10,11 +10,55 @@ body {
   padding: 0;
 }
 
+.explore-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.explore-btn button {
+  border: none;
+  transition: 0.3s;
+  border-radius: 40px;
+  padding: 20px 30px;
+  background: linear-gradient(45deg, #ff79da, #9356dc);
+  color: white;
+}
+
+.explore-btn button:hover {
+  background: linear-gradient(-90deg, #ff79da, #9356dc);
+}
+
+.spacer {
+  height: 30px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.771);
   margin: 0;
   padding: 0;
+}
+
+.explore-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.explore-btn button {
+  border: none;
+  transition: 0.3s;
+  border-radius: 40px;
+  padding: 20px 30px;
+  background: linear-gradient(45deg, #ff79da, #9356dc);
+  color: white;
+}
+
+.explore-btn button:hover {
+  background: linear-gradient(-90deg, #ff79da, #9356dc);
+}
+
+.spacer {
+  height: 30px;
 }
 
 header {
@@ -49,6 +93,28 @@ body {
   color: rgba(0, 0, 0, 0.771);
   margin: 0;
   padding: 0;
+}
+
+.explore-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.explore-btn button {
+  border: none;
+  transition: 0.3s;
+  border-radius: 40px;
+  padding: 20px 30px;
+  background: linear-gradient(45deg, #ff79da, #9356dc);
+  color: white;
+}
+
+.explore-btn button:hover {
+  background: linear-gradient(-90deg, #ff79da, #9356dc);
+}
+
+.spacer {
+  height: 30px;
 }
 
 .landing {
@@ -123,6 +189,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .fonctionnement {
+    padding: 0 100px;
+  }
   .fonctionnement .boxes {
     margin: 0 30px;
     display: flex;
@@ -138,16 +207,21 @@ body {
 .restaurants {
   padding: 20px;
 }
-.restaurants .plats {
-  padding: 20px;
-}
-.restaurants .plats .plat {
+.restaurants .plats .plat-link {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  padding-bottom: 20px;
   border-radius: 20px;
   background-color: #f4f4f4;
   position: relative;
   margin-bottom: 20px;
+  transition: 0.3s;
 }
-.restaurants .plats .nouveau-plat::before {
+.restaurants .plats .plat-link:hover {
+  transform: scale(1.03);
+}
+.restaurants .plats .plat-link .nouveau-plat::before {
   content: "Nouveau";
   position: absolute;
   background-color: #66ebca;
@@ -156,11 +230,11 @@ body {
   right: 12px;
   top: 12px;
 }
-.restaurants .plats .img {
+.restaurants .plats .plat-link .img {
   overflow: hidden;
   height: 200px;
 }
-.restaurants .plats img {
+.restaurants .plats .plat-link img {
   overflow: hidden;
   object-fit: cover;
   width: 100%;
@@ -168,46 +242,50 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.restaurants .plats .content {
+.restaurants .plats .plat-link .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.restaurants .plats .name {
-  padding: 5px 20px 10px;
+.restaurants .plats .plat-link .name {
+  padding: 5px 20px 5px;
   font-family: Roboto;
 }
-.restaurants .plats .name h3 {
+.restaurants .plats .plat-link .name h3 {
   font-size: 18px;
   font-weight: 700;
 }
-.restaurants .plats .name p {
+.restaurants .plats .plat-link .name p {
   font-size: 17px;
   font-weight: 300;
   letter-spacing: 1.001px;
+  margin: 0;
 }
-.restaurants .plats .fav {
+.restaurants .plats .plat-link .fav {
   padding-right: 30px;
   font-size: 22px;
 }
-.restaurants .plats .selected i {
+.restaurants .plats .plat-link .selected i {
   background: linear-gradient(45deg, #9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 1024px) {
+  .restaurants {
+    padding: 0 100px;
+  }
   .plats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 20px;
+    gap: 20px 40px;
   }
 }
 footer {
   background-color: rgb(42, 42, 42);
   color: whitesmoke;
-  padding: 20px;
+  padding: 20px 35px;
 }
 footer h3 {
   font-family: Shrikhand;
@@ -237,6 +315,149 @@ footer div span i {
   }
   footer div span {
     margin-right: 30px;
+  }
+}
+.page {
+  background-color: #f6f6f6;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 43.74px;
+  font-family: Shrikhand;
+  font-weight: 400;
+}
+
+.header .icon-back {
+  position: absolute;
+  left: 30px;
+  top: 28px;
+}
+
+img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+}
+
+.container {
+  background-color: #f6f6f6;
+  position: relative;
+  z-index: 1;
+  top: -60px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  padding: 20px 30px;
+  /** title green */
+}
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: italic;
+  color: black;
+}
+.container .content .name p {
+  padding-right: 50px;
+}
+.container .spec-title {
+  text-transform: uppercase;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 25px;
+}
+.container .spec-title::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  background-color: #99e2d0;
+  height: 2px;
+  bottom: -5px;
+  left: 1px;
+}
+.container .plat-price {
+  background-color: white;
+  box-shadow: 0.5px 0.5px 7px 0px rgba(0, 0, 0, 0.06);
+  padding: 15px 25px;
+  margin-top: 15px;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+.container .plat-price::after {
+  content: "";
+  transition: 0.3s;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  background-color: #99e2d0;
+  font-size: 22px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .plat-price:hover::after {
+  content: "\f00c";
+  width: 90px;
+}
+.container .plat-price:hover .desc {
+  margin-right: 90px;
+}
+.container .plat-price p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.container .plat-price .desc {
+  display: flex;
+  transition: 0.3s;
+  justify-content: space-between;
+  padding-top: 7px;
+  font-weight: 300;
+}
+.container .plat-price .desc span:last-child {
+  font-weight: bold;
+}
+
+.explore-btn {
+  padding: 55px 0 0 0;
+}
+
+@media (min-width: 1024px) {
+  .page {
+    background-color: white;
+  }
+  .container {
+    margin: 10px auto;
+    width: 600px;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
   }
 }
 

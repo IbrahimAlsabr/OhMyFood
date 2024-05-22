@@ -16,3 +16,25 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.explore-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.explore-btn button {
+    border: none;
+    transition: 0.3s;
+    border-radius: 40px;
+    padding: 20px 30px;
+    background: linear-gradient(45deg, $secondary-color, $primary-color);
+    color: white;
+}
+
+.explore-btn button:hover {
+    background: linear-gradient(-90deg, $secondary-color, $primary-color);
+}
+
+.spacer {
+    height: 30px;
+}
