@@ -154,3 +154,31 @@ img {
         height: 300px;
     }
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.palts {
+    .plat-price {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    .plat-price:nth-child(1) {
+        animation-delay: 0.3s;
+    }
+    .plat-price:nth-child(2) {
+        animation-delay: 0.6s;
+    }
+    .plat-price:nth-child(3) {
+        animation-delay: 0.9s;
+    }
+}

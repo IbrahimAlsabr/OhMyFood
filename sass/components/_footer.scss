@@ -3,9 +3,9 @@ footer {
     color: whitesmoke;
     padding: 20px 35px;
 
-	h3 {
-		font-family: Shrikhand;
-	}
+    h3 {
+        font-family: Shrikhand;
+    }
     div {
         display: flex;
         flex-direction: column;
@@ -14,24 +14,28 @@ footer {
                 padding-right: 8px;
             }
             padding-top: 10px;
+            cursor: pointer;
+        }
+        a {
+            color: whitesmoke;
         }
     }
 }
 
 @media (min-width: 1024px) {
     footer {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-around;
-		align-items: center;
-		
-		div {
-			display: flex;
-			flex-direction: row-reverse;
-			justify-content: space-between;
-			span {
-				margin-right: 30px;
-			}
-		}
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+        div {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            span {
+                margin-right: 30px;
+            }
+        }
     }
 }

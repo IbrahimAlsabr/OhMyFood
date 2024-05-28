@@ -33,8 +33,28 @@ body {
 
 .explore-btn button:hover {
     background: linear-gradient(-90deg, $secondary-color, $primary-color);
+    box-shadow: 1px 1px 10px 1px #0000005e;
 }
 
 .spacer {
     height: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fav {
+    padding-right: 30px;
+    font-size: 22px;
+    .fa-heart {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400;
+    }
+    .fa-heart:hover {
+        font-weight: 900; /* corresponds to 'fas' */
+        background: linear-gradient(45deg, #9356dc, #ff79da);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 }

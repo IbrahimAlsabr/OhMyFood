@@ -1,7 +1,17 @@
 .restaurants {
     padding: 20px;
-	margin-bottom: 80px;
     .plats {
+        .nouveau-plat {
+            .img::before {
+                content: "Nouveau";
+                position: absolute;
+                background-color: #66ebca;
+                color: #008766;
+                padding: 6px;
+                right: 12px;
+                top: 12px;
+            }
+        }
         .plat-link {
             text-decoration: none;
             display: block;
@@ -17,19 +27,11 @@
                 transform: scale(1.03);
             }
 
-            .nouveau-plat::before {
-                content: "Nouveau";
-                position: absolute;
-                background-color: #66ebca;
-                color: #008766;
-                padding: 5px;
-                right: 12px;
-                top: 12px;
-            }
             .img {
                 overflow: hidden;
                 height: 200px;
             }
+
             img {
                 overflow: hidden;
                 object-fit: cover;
@@ -56,15 +58,6 @@
                     letter-spacing: 1.001px;
                     margin: 0;
                 }
-            }
-            .fav {
-                padding-right: 30px;
-                font-size: 22px;
-            }
-            .selected i {
-                background: linear-gradient(45deg, #9356dc, #ff79da);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
             }
         }
     }

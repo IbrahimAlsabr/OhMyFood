@@ -6,9 +6,6 @@
 @import "components/_restaurants";
 @import "components/_footer";
 @import "components/_plats_details";
+@import "components/_loader";
 
 @import "~@fortawesome/fontawesome-free/css/all.css";
-
-button:hover {
-    background: linear-gradient(-90deg, $secondary-color, $primary-color);
-}
