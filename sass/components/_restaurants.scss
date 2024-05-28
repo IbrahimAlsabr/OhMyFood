@@ -1,5 +1,6 @@
 .restaurants {
     padding: 20px;
+	margin-bottom: 80px;
     .plats {
         .plat-link {
             text-decoration: none;
@@ -71,7 +72,7 @@
 
 @media (min-width: 1024px) {
     .restaurants {
-        padding: 0 100px;
+        padding: 100px;
     }
 
     .plats {

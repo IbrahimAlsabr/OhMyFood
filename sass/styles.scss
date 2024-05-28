@@ -8,3 +8,7 @@
 @import "components/_plats_details";
 
 @import "~@fortawesome/fontawesome-free/css/all.css";
+
+button:hover {
+    background: linear-gradient(-90deg, $secondary-color, $primary-color);
+}
