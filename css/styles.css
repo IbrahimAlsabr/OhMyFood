@@ -224,7 +224,7 @@ a {
   box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2196078431);
 }
 .fonctionnement .box:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.368627451);
 }
 .fonctionnement .box i {
@@ -471,6 +471,9 @@ img {
   width: 90px;
 }
 .container .plat-price:hover .desc {
+  margin-right: 90px;
+}
+.container .plat-price:hover .title {
   margin-right: 90px;
 }
 .container .plat-price p {
